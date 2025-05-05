@@ -1,5 +1,5 @@
-<html>
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="IE=11.0000" http-equiv="X-UA-Compatible">
@@ -8,11 +8,11 @@
 
   <script>
     function wrongAnswer(event) {
-      if (event.currentTarget.className == 'wrong') {
+      if (event.currentTarget.className === 'wrong') {
       } else {
         event.currentTarget.className = 'wrong';
         let block = event.currentTarget.parentNode.parentNode;
-        if (block.className == '') {
+        if (block.className === '') {
           block.className = 'wrong';
           let CCount = document.getElementById("countWrongAnswer");
           CCount.innerHTML = Number(CCount.innerHTML) + 1;
@@ -21,16 +21,15 @@
         if (hints.length > 0) {
           hints[0].style.display = 'block';
         }
-        ;
       }
     }
 
     function correctAnswer(event) {
-      if (event.currentTarget.className == 'correct') {
+      if (event.currentTarget.className === 'correct') {
       } else {
         event.currentTarget.className = 'correct';
         let block = event.currentTarget.parentNode.parentNode;
-        if (block.className == '') {
+        if (block.className === '') {
           block.className = 'correct';
           let CCount = document.getElementById("countCorrectAnswer");
           CCount.innerHTML = Number(CCount.innerHTML) + 1;
@@ -188,6 +187,7 @@
       max-width: 300px;
     }
   </style>
+
 </head>
 
 <body data-hasqtip="0" style="">
@@ -264,79 +264,77 @@
 </div>
 
 <div class="section" id="7">
-  <div class="section-header">7.Среда разработки/div>
-    <div class="section-slide">
+  <div class="section-header">7.Среда разработки</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="8">
-    <div class="section-header">8.Отладка</div>
-    <div class="section-slide">
+<div class="section" id="8">
+  <div class="section-header">8.Отладка</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="9">
-    <div class="section-header">9.Групповая разработка</div>
-    <div class="section-slide">
+<div class="section" id="9">
+  <div class="section-header">9.Групповая разработка</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="10">
-    <div class="section-header">10.Встроенный язык</div>
-    <div class="section-slide">
+<div class="section" id="10">
+  <div class="section-header">10.Встроенный язык</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="11">
-    <div class="section-header">11.Язык запросов</div>
-    <div class="section-slide">
+<div class="section" id="11">
+  <div class="section-header">11.Язык запросов</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="12">
-    <div class="section-header">12.Компоненты интерфейса</div>
-    <div class="section-slide">
+<div class="section" id="12">
+  <div class="section-header">12.Компоненты интерфейса</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="13">
-    <div class="section-header">13."1С:Шина"</div>
-    <div class="section-slide">
+<div class="section" id="13">
+  <div class="section-header">13."1С:Шина"</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <div class="section" id="14">
-    <div class="section-header">14.Команды API</div>
-    <div class="section-slide">
+<div class="section" id="14">
+  <div class="section-header">14.Команды API</div>
+  <div class="section-slide">
 
-      <br>
-    </div>
+    <br>
   </div>
+</div>
 
-  <script>
-    $(".section-header").click(function () {
-      if ($(this).siblings(".section-slide").is(':visible')) {
-        $(this).siblings(".section-slide").hide();
-      } else {
-        $(this).siblings(".section-slide").show();
-      }
-
-    });
-  </script>
+<script>
+  $(".section-header").click(function () {
+    if (!$(this).siblings(".section-slide").is(':visible')) {
+      $(this).siblings(".section-slide").show();
+    } else {
+      $(this).siblings(".section-slide").hide();
+    }
+  });
+</script>
 
 </body>
-</html>
