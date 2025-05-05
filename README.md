@@ -1,4 +1,4 @@
-# 1С:Предприятие.Элемент 5.0
+# Проф 1С:Предприятие.Элемент 5.0
 https://verdenoise.github.io/prof-element/
 <br>
 <br>
