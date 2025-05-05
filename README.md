@@ -1,7 +1,9 @@
 # 1С:Предприятие.Элемент 5.0
 https://verdenoise.github.io/prof-element/
 <br>
+<br>
 Актуально на 05.05.2025
+<br>
 <br>
 Основа взята от
 <br>
