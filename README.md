@@ -2,7 +2,7 @@
 https://verdenoise.github.io/prof-element/
 <br>
 <br>
-Актуально на 05.05.2025
+Актуально на 20.06.2025
 <br>
 <br>
 Основа взята от
